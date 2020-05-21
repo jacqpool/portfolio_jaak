@@ -1,0 +1,26 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+{% load static %}
+
+<img src="{% static 'portfolio/Everest_original2.jpg' %}" class="img-fluid" alt="Responsive image">
+<br>
+<br>
+<br>
+
+<div class="container">
+  <h2>More...</h2>
+  <hr>
+  <div class="card mx-auto" style="width: 18rem;">
+    <img src="{% static 'portfolio/projects.png' %}" class="card-img-top" alt="projects.png here">
+    <div class="card-body">
+      <h5 class="card-title">My Projects</h5>
+      <p class="card-text">Check out my projects. Much more to follow soon!</p>
+      <a href="{% url 'all_projects' %}" class="btn btn-primary">Projects</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+{% endblock %}
